@@ -1,5 +1,5 @@
 import { motion, } from "framer-motion";
-import { Calendar, ArrowRight, Users } from "lucide-react";
+import { Calendar, ArrowRight } from "lucide-react";
 import { useRef } from "react";
 
 export function Hero() {

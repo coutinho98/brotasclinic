@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import {  CheckCircle2, TrendingDown, Star, ArrowBigRight, ArrowRight } from "lucide-react";
+import { CheckCircle2, TrendingDown, Star, ArrowRight } from "lucide-react";
 
 export function BrotasMed() {
     const beneficios = [
@@ -12,7 +12,7 @@ export function BrotasMed() {
     return (
         <section id="brotasmed" className="relative py-24 bg-black overflow-hidden">
             {/* Efeito de brilho de fundo inspirado no Hero original */}
-            <div 
+            <div
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] opacity-10 pointer-events-none"
                 style={{
                     background: "radial-gradient(circle, #0ea5e9 0%, transparent 70%)",
@@ -21,9 +21,9 @@ export function BrotasMed() {
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
-                    
+
                     {/* Lado Esquerdo: Conteúdo Textual */}
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
@@ -33,7 +33,7 @@ export function BrotasMed() {
                             <Star size={14} fill="currentColor" />
                             <span>BrotasMed</span>
                         </div>
-                        
+
                         <h2 className="text-4xl md:text-6xl text-white font-bold tracking-tight mb-6">
                             Seu cartão <br />
                             <span className="bg-gradient-to-r from-cyan-200 to-blue-500 bg-clip-text text-transparent">
@@ -61,7 +61,7 @@ export function BrotasMed() {
                     </motion.div>
 
                     {/* Lado Direito: Visual do Cartão/Destaque */}
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
@@ -72,7 +72,7 @@ export function BrotasMed() {
                             <div className="absolute top-0 right-0 p-8 opacity-10">
                                 <TrendingDown size={120} className="text-cyan-500" />
                             </div>
-                            
+
                             <div className="relative z-20">
                                 <div className="w-16 h-10 bg-gradient-to-br from-zinc-700 to-zinc-800 rounded-md mb-20 border border-white/5" />
                                 <div className="space-y-4">
@@ -87,7 +87,7 @@ export function BrotasMed() {
                         </div>
 
                         {/* Elemento flutuante de "Economia" */}
-                        <motion.div 
+                        <motion.div
                             animate={{ y: [0, -10, 0] }}
                             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                             className="absolute -bottom-6 -right-6 bg-cyan-600 p-6 rounded-2xl shadow-xl z-20"
