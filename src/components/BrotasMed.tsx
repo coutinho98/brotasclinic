@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { CreditCard, CheckCircle2, TrendingDown, Star, ArrowBigRight, ArrowRight } from "lucide-react";
+import {  CheckCircle2, TrendingDown, Star, ArrowBigRight, ArrowRight } from "lucide-react";
 
 export function BrotasMed() {
     const beneficios = [
