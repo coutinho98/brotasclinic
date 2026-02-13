@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Phone } from "lucide-react";
 
 export function Navbar() {
